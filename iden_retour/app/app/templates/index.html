@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Traitement de Texte</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <h1>Test de Traitement de Texte</h1>
+    <form id="textForm">
+        <textarea id="textInput" placeholder="Entrez votre texte ici"></textarea>
+        <button type="button" onclick="submitText()">Analyser</button>
+    </form>
+    <div class="result" id="resultContainer" style="display: none;">
+        <h2>Résultat de l'Analyse</h2>
+        <p><strong>Langage offensant:</strong> <span id="offensiveLanguage"></span></p>
+        <p><strong>Pourcentage de dangerosité en français:</strong> <span id="dangerFr"></span>%</p>
+        <p><strong>Pourcentage de dangerosité en anglais:</strong> <span id="dangerEn"></span>%</p>
+        <p><strong>Pourcentage de dangerosité global:</strong> <span id="dangerGlobal"></span>%</p>
+        <!-- <h3>Nature de la dangerosité:</h3>
+        <ul id="dangerList"></ul> -->
+        <h3>Analyses sémantiques:</h3>
+        <p><strong>Entités nommées:</strong> <span id="namedEntities"></span></p>
+        <p><strong>Verbes:</strong> <span id="verbs"></span></p>
+        <p><strong>Adjectifs:</strong> <span id="adjectives"></span></p>
+    </div>
+
+    <script src="../static/js/app.js"></script>
+</body>
+</html>
+
